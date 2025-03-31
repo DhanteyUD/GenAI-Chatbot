@@ -1,2 +1,2 @@
 # GenAI-Chatbot
-Creating a Chatbot using OpenAI services
+Creating a Chatbot using OpenAI
