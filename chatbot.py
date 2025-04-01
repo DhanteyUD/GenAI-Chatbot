@@ -1,6 +1,13 @@
+import os
+from dotenv import load_dotenv
+
 import streamlit as st
 from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Upload PDF files
 st.header("UD Chatbot")
@@ -26,3 +33,7 @@ if file is not None:
     )
     chunks = text_splitter.split_text(text);
     # st.write(chunks)
+
+    # Generating embeddings
+
+    # Creating vector stores
